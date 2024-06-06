@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Security-Policy" content="
         default-src 'self' blob:;
-        script-src 'nonce-staticNonce123' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com data:;
-        style-src 'nonce-staticNonce123' *.visualwebsiteoptimizer.com app.vwo.com;
+        script-src 'unsafe-inline' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com data:;
+        style-src 'unsafe-inline' *.visualwebsiteoptimizer.com app.vwo.com;
         img-src *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io;
         connect-src *.visualwebsiteoptimizer.com app.vwo.com csp-xi.vercel.app;
         frame-src *.visualwebsiteoptimizer.com app.vwo.com;
@@ -35,7 +35,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemant Kumar Page</title>
-    <style nonce="staticNonce123">
+    <style>
           #contact_us,
       #about,
       #suggestions {
@@ -177,7 +177,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
     </style>
 </head>
 <body>
-<h1 id="registration-heading" style="text-align: center" nonce="staticNonce123">
+<h1 id="registration-heading" style="text-align: center">
       Registration Form
     </h1>
     <div class="div1">
@@ -319,7 +319,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
       <br />
     </p>
 
-    <div style="height: 30px" nonce="staticNonce123"></div>
+    <div style="height: 30px"></div>
     <a id="dynamicLink"></a>
     <p>
       <button onclick="myFunction()">Generate Link</button>
@@ -431,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (scenario01Parent) {
                 const scenario01Root = scenario01Parent.attachShadow({ mode: 'open' });
                 scenario01Root.innerHTML = `
-                    <style nonce="staticNonce123">
+                    <style>
                         .scenario01-parent {
                             background-color: lightgray;
                             padding: 10px;
@@ -453,7 +453,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (scenario03Parent) {
                 const scenario03Root = scenario03Parent.attachShadow({ mode: 'open' });
                 scenario03Root.innerHTML = `
-                    <style nonce="staticNonce123">
+                    <style>
                         .scenario03-parent {
                             background-color: lightcoral;
                             padding: 10px;
@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (scenario03ChildContainer) {
                     const scenario03ChildRoot = scenario03ChildContainer.attachShadow({ mode: 'open' });
                     scenario03ChildRoot.innerHTML = `
-                       <style nonce="staticNonce123">
+                       <style>
                             .scenario03-child-content {
                                 background-color: lightgreen;
                                 padding: 10px;
