@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Security-Policy" content="
         default-src 'self' blob:;
-        script-src 'unsafe-inline' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com data:;
-        style-src 'unsafe-inline' *.visualwebsiteoptimizer.com app.vwo.com;
+        script-src 'nonce-staticNonce123' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com data:;
+        style-src 'nonce-staticNonce123' *.visualwebsiteoptimizer.com app.vwo.com;
         img-src *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io;
         connect-src *.visualwebsiteoptimizer.com app.vwo.com csp-xi.vercel.app;
         frame-src *.visualwebsiteoptimizer.com app.vwo.com;
@@ -35,7 +35,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemant Kumar Page</title>
-    <style>
+    <style nonce="staticNonce123">
           #contact_us,
       #about,
       #suggestions {
