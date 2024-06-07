@@ -2,18 +2,17 @@
 <html>
   <head>
     <title>My Website</title>
-    <meta http-equiv="Content-Security-Policy" content="
-     default-src 'self'; 
-     style-src 'self' 'unsafe-inline'; 
-     script-src 'self' 'unsafe-inline'; 
-     img-src 'self'; 
-     frame-ancestors 'self'; 
-     connect-src 'self'; 
-     font-src 'self'; 
-     form-action 'self'; 
-     object-src 'none'; 
-     media-src 'self';
-">
+  <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      style-src 'self' 'unsafe-inline';
+      script-src 'self' 'unsafe-inline' https://dev.visualwebsiteoptimizer.com;
+      img-src 'self';
+      connect-src 'self';
+      font-src 'self';
+      form-action 'self';
+      object-src 'none';
+      media-src 'self';
+    ">
     <style>
       #contact_us,
       #about,
