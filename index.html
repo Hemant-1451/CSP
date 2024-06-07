@@ -4,11 +4,12 @@
 
 <meta http-equiv="Content-Security-Policy" content="
         default-src 'self' blob:;
-        script-src 'nonce-staticnonce123' *.visualwebsiteoptimizer.com app.vwo.com;
-        style-src 'nonce-staticnonce123'  *.visualwebsiteoptimizer.com app.vwo.com;
-        img-src *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io;
+        script-src 'self' 'nonce-staticnonce123' *.visualwebsiteoptimizer.com app.vwo.com;
+        style-src 'self'  'nonce-staticnonce123'  *.visualwebsiteoptimizer.com app.vwo.com;
+        img-src 'self' blob: https: data: *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io;
+        media-src 'self' *.com;
         connect-src *.visualwebsiteoptimizer.com app.vwo.com;
-        frame-src *.visualwebsiteoptimizer.com app.vwo.com;
+        frame-src 'self'  *.visualwebsiteoptimizer.com app.vwo.com;
         worker-src 'self' blob:;
         child-src 'self' blob: *.visualwebsiteoptimizer.com app.vwo.com;
     ">
