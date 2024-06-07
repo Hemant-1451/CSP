@@ -3,9 +3,9 @@
   <head>
     <title>My Website</title>
   <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self' blob: 'unsafe-inline' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io cdn.pushcrew.com;
-      style-src 'self' 'unsafe-inline' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com data:;
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com data:;
+      default-src 'self' blob: 'nonce-staticNonce123' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io cdn.pushcrew.com;
+      style-src 'self' 'nonce-staticNonce123' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com data:;
+      script-src 'self' 'nonce-staticNonce123' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com data:;
       img-src 'self' *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io cdn.pushcrew.com data:;
       connect-src 'self' *.visualwebsiteoptimizer.com app.vwo.com;
       frame-src 'self' *.visualwebsiteoptimizer.com app.vwo.com;
@@ -16,7 +16,7 @@
       worker-src 'self' blob:;
       child-src 'self' blob: *.visualwebsiteoptimizer.com app.vwo.com;
     ">
-    <style>
+    <style nonce="staticNonce123">
       #contact_us,
       #about,
       #suggestions {
@@ -63,7 +63,7 @@
       }
     </style>
      <!-- Start VWO Async SmartCode -->
-<script type="text/javascript" id='vwoCode'>
+<script type="text/javascript" id='vwoCode' nonce="staticNonce123">
 const params = new URLSearchParams(window.location.search);
 const accId = parseInt(params.get("id"));
 const accountId = accId || 848489;
@@ -85,7 +85,7 @@ t: 100
 <!-- End VWO Async SmartCode -->
   </head>
   <body>
-    <h1 id="registration-heading" style="text-align: center">Registration Form</h1>
+    <h1 id="registration-heading" >Registration Form</h1>
     <div class="div1">
       <h2 id="WelMsg">Welcome to the website, Registration Starts Here...</h2>
       <p id="Welpara">
@@ -233,12 +233,11 @@ t: 100
       <br />
     </p>
 
-    <div style="height: 30px"></div>
     <a id="dynamicLink"></a>
     <p>
       <button onclick="myFunction()">Generate Link</button>
       <input id="input" />
-      <script>
+      <script nonce="staticNonce123">
         function myFunction() {
           document.getElementById("dynamicLink").innerHTML = "GENERATED LINK";
           document.getElementById("dynamicLink").href =
@@ -247,7 +246,7 @@ t: 100
         }
       </script>
     </p>
-    <script>
+    <script nonce="staticNonce123">
         let spaCount = 1;
 
         function historyPushUrl() {
