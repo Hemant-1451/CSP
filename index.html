@@ -3,11 +3,13 @@
 <head>
 <meta http-equiv="Content-Security-Policy" content="
     worker-src 'self' blob:;
-    script-src 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do'  *.visualwebsiteoptimizer.com app.vwo.com data:;
+    script-src 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do' 'unsafe-inline'   *.visualwebsiteoptimizer.com app.vwo.com data:;
     style-src 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do'  *.visualwebsiteoptimizer.com app.vwo.com;
     img-src 'self' *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io data:;
     connect-src 'self' *.visualwebsiteoptimizer.com app.vwo.com csp-xi.vercel.app;
-    frame-src 'self' *.visualwebsiteoptimizer.com app.vwo.com;
+    frame-src googletagmanager.com https://consentcdn.cookiebot.com https://*.visualwebsiteoptimizer.com https://app.vwo.com https://*.cookiebot.eu;
+    base-uri 'self';
+    object-src 'none';
 ">
 
  <!-- Start VWO Async SmartCode -->
