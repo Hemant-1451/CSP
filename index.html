@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Security-Policy" content="
         default-src 'self' blob:;
-        script-src 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do' *.visualwebsiteoptimizer.com app.vwo.com;
-        style-src 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do'  *.visualwebsiteoptimizer.com app.vwo.com;
+        script-src 'nonce-staticnonce123' *.visualwebsiteoptimizer.com app.vwo.com;
+        style-src 'nonce-staticnonce123'  *.visualwebsiteoptimizer.com app.vwo.com;
         img-src *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io;
         connect-src *.visualwebsiteoptimizer.com app.vwo.com;
         frame-src *.visualwebsiteoptimizer.com app.vwo.com;
@@ -12,7 +12,7 @@
         child-src 'self' blob: *.visualwebsiteoptimizer.com app.vwo.com;
     ">
     <!-- Start VWO Async SmartCode -->
-    <script type="text/javascript" nonce="fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do">
+    <script type="text/javascript" nonce="staticnonce123">
         const params = new URLSearchParams(window.location.search);
         const accId = parseInt(params.get("id"));
         const accountId = accId || 848489;
@@ -131,7 +131,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemant Kumar Page</title>
-    <style nonce="fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do">
+    <style nonce="staticnonce123">
           #contact_us,
       #about,
       #suggestions {
@@ -335,7 +335,7 @@
       <button onclick="myFunction()">Generate Link</button>
       <input id="input" />
 
-     <script nonce="fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do">
+     <script nonce="staticnonce123">
         function myFunction() {
           document.getElementById("dynamicLink").innerHTML = "GENERATED LINK";
           document.getElementById("dynamicLink").href =
@@ -344,7 +344,7 @@
         }
       </script>
     </p>
-    <script nonce="fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do">
+    <script nonce="staticnonce123">
       let spaCount = 1;
 
       function historyPushUrl() {
@@ -358,9 +358,9 @@
         history.pushState(null, null, "?query=" + Date.now());
       }
     </script>
-<script nonce="fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do">
+<script nonce="staticnonce123">
 // Step 1: Generate Nonce Value
-var nonceValue = 'fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do'; // Replace with your actual nonce value
+var nonceValue = 'staticnonce123'; // Replace with your actual nonce value
 
 // Step 2: Identify Elements with Inline Styles
 var elementsWithInlineStyles = document.querySelectorAll('[style]');
