@@ -80,6 +80,15 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
         font-size: 25px;
         font-weight: 600;
       }
+        #registration-heading {
+          text-align: center;
+       }
+      .feedBackForm {
+        height: 100px;
+     }
+      .custom-height {
+          height: 30px;
+     }
 /* Define styles for shadow DOM */
         .container {
             display: flex;
@@ -177,9 +186,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
     </style>
 </head>
 <body>
-<h1 id="registration-heading" style="text-align: center" nonce="fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do">
-      Registration Form
-    </h1>
+<h1 id="registration-heading" >Registration Form</h1>
     <div class="div1">
       <h2 id="WelMsg">Welcome to the website, Registration Starts Here...</h2>
       <p id="Welpara">
@@ -281,7 +288,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
         <br />
         <br />
         <br />
-        <input class="feedBackForm" id="answer" name="feedback" placeholder="Text" size="100" style="height: 100px" type="text" value="" autocomplete="off" />
+        <input class="feedBackForm" id="answer" name="feedback" placeholder="Text" size="100" type="text" value="" autocomplete="off" />
         <br />
         <br />
         <input type="submit" value="Submit" />
@@ -319,7 +326,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
       <br />
     </p>
 
-    <div style="height: 30px" nonce="fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do"></div>
+    <div class="custom-height"></div>
     <a id="dynamicLink"></a>
     <p>
       <button onclick="myFunction()">Generate Link</button>
