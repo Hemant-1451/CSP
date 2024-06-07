@@ -90,7 +90,22 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
       .custom-height {
           height: 30px;
      }
-    </style>
+    </style><script>
+// Step 1: Generate Nonce Value
+var nonceValue = 'fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do'; // Replace with your actual nonce value
+
+// Step 2: Identify Elements with Inline Styles
+var elementsWithInlineStyles = document.querySelectorAll('[style]');
+
+// Step 3: Add Nonce Attribute
+elementsWithInlineStyles.forEach(function(element) {
+    // Check if the element already has a nonce attribute
+    if (!element.hasAttribute('nonce')) {
+        // Add the nonce attribute with the generated nonce value
+        element.setAttribute('nonce', nonceValue);
+    }
+});
+    </script>
 </head>
 <body>
 <h1 id="registration-heading" >Registration Form</h1>
