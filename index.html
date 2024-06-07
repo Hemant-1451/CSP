@@ -3,7 +3,18 @@
   <head>
     <title>My Website</title>
   <meta http-equiv="Content-Security-Policy" content="
-      script-src 'self' blob: 'nonce-staticNonce123' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com data:;
+      default-src 'self' blob: 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io cdn.pushcrew.com;
+      style-src 'self' 'unsafe-inline' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com data:;
+      script-src 'self' 'nonce-staticNonce123' 'unsafe-eval' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com data:;
+      img-src 'self' *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io cdn.pushcrew.com data:;
+      connect-src 'self' *.visualwebsiteoptimizer.com app.vwo.com;
+      frame-src 'self' *.visualwebsiteoptimizer.com app.vwo.com;
+      font-src 'self';
+      form-action 'self';
+      object-src 'none';
+      media-src 'self';
+      worker-src 'self' blob:;
+      child-src 'self' blob: *.visualwebsiteoptimizer.com app.vwo.com;
     ">
 
     <style nonce="staticNonce123">
