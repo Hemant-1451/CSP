@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self' blob:;
-    script-src 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do' *.visualwebsiteoptimizer.com app.vwo.com data:;
-    style-src 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com;
+    default-src 'none'; 
+    script-src 'self' 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do' *.visualwebsiteoptimizer.com app.vwo.com data:;
+    style-src 'self' 'nonce-fh0_wQCCQUfjF1XHCu33B8EzJh97ChmUo7d8NkEI0Do' *.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com;
     img-src 'self' *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io data:;
-    connect-src *.visualwebsiteoptimizer.com app.vwo.com csp-xi.vercel.app;
-    frame-src *.visualwebsiteoptimizer.com app.vwo.com;
+    connect-src 'self' *.visualwebsiteoptimizer.com app.vwo.com csp-xi.vercel.app;
+    frame-src 'self' *.visualwebsiteoptimizer.com app.vwo.com;
     worker-src 'self' blob:;
     child-src 'self' blob: *.visualwebsiteoptimizer.com app.vwo.com;
 ">
